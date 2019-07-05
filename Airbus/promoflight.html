@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="searchflight_CSS.css">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+	<script src="/test.js" type="text/javascript"></script>
+	<div class="header">
+	<div class="fixed-header">
+<!-- 		<img style="float:left;" src="rsz2_logo.png">
+		<img style="float:right" src="menu.png" > -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="home.html"><img src="rsz2_logo.png"></a>
+  <button style="float:right" "class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><img src="menu.png"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav" style="float:right">
+    	<li class="nav-item"> 
+        <button onclick="location.href='home.html'"class="search_btn-2" type="button" id="searchflight_button">HOME</button>
+      </li>
+    <!--   <li class="nav-item"> 
+        <button onclick="location.href='#'"class="search_btn-2" type="button" id="searchflight_button">FAQS</button>
+      </li> -->
+      <li class="nav-item"> 
+        <button onclick="location.href='home.html'"class="search_btn" type="button" id="searchflight_button">LOGOUT</button>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+		
+</div>
+</head>
+<body class="bg" background="bg.jpg">
+	<br><br><br><br><br>
+<!--Go back button
+	<button onclick="goBack()">Go Back</button>-->
+		<div class="page-title">
+	PROMO FLIGHTS
+</div>
+	<input type="image" name="bck-btn" src="back2.png" onclick="goBack()">
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+	<div class="search_txtbox">
+		<input class="search_selection" type="text" name="search-promo" placeholder="Search"></input>
+	</div>
+
+	<div class="promo-image">
+		<input type="image" src="dubai.jpg" alt="submit" width="100%"/><br>
+		<input type="image" src="cebu.jpg" alt="submit" width="100%"/><br>
+		<input type="image" src="hk.jpg" alt="submit" width="100%"/><br>
+		<input type="image" src="japan.jpg" alt="submit" width="100%"/><br>
+		<input type="image" src="seoul.jpg" alt="submit" width="100%"/>
+	</div>
+
+
+</body>
+</html>

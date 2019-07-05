@@ -1,0 +1,66 @@
+.tab{
+	border-style: outset;
+	background: white;
+	padding:0px;
+	text-decoration: none;
+	font-size: 60px;
+	margin: auto;
+	text-align: center;
+	font-family: "sans-serif", Verdana;
+}
+.input,.genderselection, .form_design{
+	color:white;
+	font-family: "sans-serif", Verdana;
+	text-align: center;
+	width: 100%;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	box-sizing: border-box;
+  	border-radius: 4px;
+}
+.input{
+	color: black;
+	opacity: 0.5;
+}
+.submit{
+	background-color: #466b78;
+	color: white;
+	text-decoration: none;
+	padding: 8px 22px;
+	border-radius: 4px;
+	width:70%;
+}
+/*.submit_regform{
+	background-color: #466b78;
+	color: white;
+	text-decoration: none;
+	padding: 8px 22px;
+	border-radius: 4px;
+	width:70%;
+	margin: auto;
+	text-align: center;
+	border: none;
+
+}*/
+
+.submit_regform{
+	background-color: #466b78;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 8px 22px;
+	border-radius: 8px;
+	width:90%;
+/*	margin-bottom: 25px;*/
+	margin:5% 5% 0% 5%;
+
+}
+.cancel_regform{
+	background-color: #gray;
+	color: black;
+	text-decoration: none;
+	padding: 8px 22px;
+	border-radius: 8px;
+	width:90%;
+	margin-bottom: 25px;
+	margin:0% 5% 0% 5%;
+}

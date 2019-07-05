@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="searchflight_CSS.css">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<div class="header">
+	<div class="fixed-header">
+		<!--<img style="float:left;" src="rsz2_logo.png">
+		 <button style="float:right" src="menu.png" > 
+
+TEST-->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="home.html"><img src="rsz2_logo.png"></a>
+  <button style="float:right" "class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><img src="menu.png"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav" style="float:right">
+    	<li class="nav-item"> 
+        <button onclick="location.href='home.html'"class="search_btn-2" type="button" id="searchflight_button">HOME</button>
+      </li>
+     <!--  <li class="nav-item"> 
+        <button onclick="location.href='#'"class="search_btn-2" type="button" id="searchflight_button">FAQS</button>
+      </li> -->
+      <li class="nav-item"> 
+        <button onclick="location.href='home.html'"class="search_btn" type="button" id="searchflight_button">LOGOUT</button>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+	</div>
+</head>
+<body class="bg" background="bg.jpg">
+	<br><br><br><br><br>
+
+	<div class="page-title">
+	CHECK-IN
+</div>
+
+	<!--Go back button
+	<button onclick="goBack()">Go Back</button>-->
+	<input type="image" name="bck-btn" src="back2.png" onclick="goBack()">
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+	<div class="search">
+		Booking Reference Code: <br>
+		<input class="search_selection" type="text" name="refnum"></input>
+		<br>
+		Name of Guest: <br>
+		<input class="search_selection" type="text" name="guestname"></input>
+		<br>
+		Contact Number of Guest: <br>
+		<input class="search_selection" type="number" name="contactnum"></input>
+	</div>
+	<br>
+		<button class="search_btn" onclick="myFunction()">Check-In</button>
+
+<script>
+function myFunction() {
+  alert("Check-in Successful!");
+}
+</script>
+<br>
+<button onclick="location.href='home.html'"class="trans1" type="button" id="searchflight_button">DONE</button>
+</body>
+</html>

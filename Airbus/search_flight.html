@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="searchflight_CSS.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<div class="header">
+	<div class="fixed-header">
+<!-- 		<img style="float:left;" src="rsz2_logo.png">
+		<img style="float:right" src="menu.png" > -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="home.html"><img src="rsz2_logo.png"></a>
+  <button style="float:right;
+" "class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><img src="menu.png"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav" style="float:right; position:relative; z-index: -1;">
+    <li class="nav-item"> 
+        <button onclick="location.href='home.html'"class="search_btn-2" type="button" id="searchflight_button">HOME</button>
+      </li>
+      <!-- <li class="nav-item"> 
+        <button onclick="location.href='#'"class="search_btn-2" type="button" id="searchflight_button">FAQS</button>
+      </li> -->
+      <li class="nav-item"> 
+        <button onclick="location.href='airbus_login.html'"class="search_btn" type="button" id="searchflight_button">LOGOUT</button>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+	</div>
+</head>
+<body class="bg" background="bg.jpg">
+	<br><br><br><br><br>
+
+	<div class="page-title">
+	LOOK FOR FLIGHTS
+</div>
+
+	<!--Go back button
+	<button onclick="goBack()">Go Back</button>-->
+	<input type="image" name="bck-btn" src="back2.png" onclick="goBack()">
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+	<div class="radiobtn">
+		<input type="radio" value="roundtrip">Roundtrip</input>
+		<input type="radio" value="oneway">One-way</input>
+		<input type="radio" value="multicity">Multi City</input>
+	<!-- </div> -->
+	<div class="search">
+		Flying from:
+		<br>
+		<select class="search_selection" name="searchfrom">
+			<option value="MNL">MNL (Manila)</option>
+			<option value="CEB">CEB (Cebu)</option>
+			<option value="MBT">MBT (Masbate)</option>
+			<option value="BHL">BHL (Bohol)</option>
+		</select>
+
+		Flying to:
+		<br>
+		<select class="search_selection" name="searchto">
+			<option value="MNL">MNL (Manila)</option>
+			<option value="CEB">CEB (Cebu)</option>
+			<option value="MBT">MBT (Masbate)</option>
+			<option value="BHL">BHL (Bohol)</option>
+		</select>
+
+		Departure date:
+		<br>
+		<input class="search_selection" type="date" name="depDate">
+
+		Return date:
+		<br>
+		<input class="search_selection" type="date" name="retDate">
+</div>
+		Adult: 
+		<input class="pax_num" type="number" name="pax_adult" min="0" max="10" placeholder="0"></input>
+		Child: 
+		<input class="pax_num" type="number" name="pax_adult" min="0" max="10" placeholder="0"></input>
+		Infant: 
+		<input class="pax_num" type="number" name="pax_adult" min="0" max="10" placeholder="0"></input>
+
+	</div>
+		<button onclick="location.href='availableflights.html'"class="search_btn"type="button" id="searchflight_button">Search</button>
+</body>
+</html>

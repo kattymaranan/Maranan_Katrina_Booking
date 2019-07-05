@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="searchflight_CSS.css">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<div class="header">
+	<div class="fixed-header">
+		<!--<img style="float:left;" src="rsz2_logo.png">
+		 <button style="float:right" src="menu.png" > 
+
+TEST-->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="home.html"><img src="rsz2_logo.png"></a>
+  <button style="float:right" "class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><img src="menu.png"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav" style="float:right">
+      <li class="nav-item"> 
+        <button onclick="location.href='home.html'"class="search_btn-2" type="button" id="searchflight_button">HOME</button>
+      </li>
+     <!--  <li class="nav-item"> 
+        <button onclick="location.href='#'"class="search_btn-2" type="button" id="searchflight_button">FAQS</button>
+      </li> -->
+      <li class="nav-item"> 
+        <button onclick="location.href='home.html'"class="search_btn" type="button" id="searchflight_button">LOGOUT</button>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+	</div>
+</head>
+<body class="bg" background="bg.jpg">
+	<br><br><br><br><br>
+
+
+  <div class="page-title">
+  PAYMENT
+</div>
+
+  <!--Go back button
+  <button onclick="goBack()">Go Back</button>-->
+  <input type="image" name="bck-btn" src="back2.png" onclick="goBack()">
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+
+    <img class="availflight_table" src="receipt.jpg">
+  <br>
+  <div class="search">
+    Mode of Payment
+    <br>
+    <select class="search_selection" name="searchfrom">
+      <option value="cc">Credit Card</option>
+      <option value="dc">Debit Card</option>
+      <option value="gc">GCash</option>
+    </select>
+    <br>
+    <br>
+  <input class="search_selection" type="text" name="selected_flight" placeholder="Cardholder Name">
+  <br><br>
+  <input class="search_selection" type="number" name="selected_flight" placeholder="Credit Card Number">
+  <br><br>
+  <input class="search_selection" type="number" name="selected_flight" placeholder="Confirmation Number">
+    <br><br>
+  <input class="search_selection" type="number" name="selected_flight" placeholder="Expiration MM/YY">
+<br><br>
+Billing Address<br>
+  <input class="search_selection" type="text" name="selected_flight" placeholder="Billing Address">
+      <br><br>
+    <select class="search_selection" name="searchfrom">
+      <option value="cc">Paranaque City</option>
+      <option value="dc">Taguig City</option>
+      <option value="gc">Makati City</option>
+    </select>
+    <br><br>
+  <input class="search_selection" type="number" name="selected_flight" placeholder="Zip Code">
+  <br><br>
+    <select class="search_selection" name="searchfrom">
+      <option value="cc">NCR</option>
+      <option value="dc">Region I</option>
+      <option value="gc">Region II</option>
+    </select>
+ <br><br>
+    <select class="search_selection" name="searchfrom">
+      <option value="cc">Philippines</option>
+      <option value="dc">Japan</option>
+      <option value="gc">China</option>
+    </select>
+    <br><br>
+  <input class="search_selection" type="text" name="selected_flight" placeholder="Email Address">
+  <br><br>
+Contact Information<br>
+  <input class="search_selection" type="text" name="selected_flight" placeholder="Passenger Name">
+   <br><br>
+  <input class="search_selection" type="text" name="selected_flight" placeholder="Contact Number">
+
+  <input class="availflight_table"type="image" src="add-btn24.png" onclick="location.href='addpass.html'">Additional Passenger Information</input>
+<br><br>
+<input type="checkbox" name="privacy-policy"><em>Privacy Policy.</em> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+<button onclick="location.href='receipt.html'"class="search_btn"type="button" id="searchflight_button">DONE</button>
+  </div>
+
+</body>
+</html>
